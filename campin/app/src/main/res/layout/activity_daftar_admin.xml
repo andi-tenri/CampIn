@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_daftar_masuk"
+    tools:context=".DaftarAdminActivity">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:src="@drawable/logoputih"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.40" />
+
+    <LinearLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/splash"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="15dp"
+        android:paddingHorizontal="17dp"
+        android:paddingVertical="12dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/TVDhello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/carter_one"
+            android:text="Silahkan daftar"
+            android:textColor="@color/color2"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/ETDnama_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableLeft="@drawable/ic_nama"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/poppins"
+            android:layout_gravity="center_horizontal"
+            android:hint="Nama"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/ETDid_admin"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableLeft="@drawable/ic_nim"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/poppins"
+            android:hint="ID"
+            android:layout_gravity="center_horizontal"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ETDNo_Telepon_Admin"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableLeft="@drawable/ic_telepon"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/poppins"
+            android:hint="No Handphone"
+            android:layout_gravity="center_horizontal"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ETDemail_admin"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="15dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppins"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ETDkata_sandi_admin"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edit_text_bg"
+            android:drawableLeft="@drawable/ic_katasandi"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/poppins"
+            android:hint="Kata Sandi"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/BTNDaftar_Admin"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_bg"
+            android:text="Daftar"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/TVDsudah_punyaakun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Sudah mempunyai akun?"
+            android:textColor="@color/color2"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/TVDmasuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Masuk"
+            android:textColor="@color/color2"
+            android:textSize="13sp"
+            android:layout_marginLeft="4dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/drawer_layout"
+    android:background="@drawable/bg_kontak"
+    tools:context=".PinjamBarangActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ic_kembali_pinjambarang"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_kembali" />
+
+            <TextView
+                android:id="@+id/TVprofil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ic_nav_menu"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/carter_one"
+                android:text="Pinjam Barang"
+                android:textColor="@color/color2"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/splash"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout1"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/pic_barang"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/noimages" />
+
+                <LinearLayout
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:background="@drawable/bg_ic_gambar"
+                    android:gravity="center"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="7dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <ImageButton
+                        android:id="@+id/IM_foto_barang_pinjam"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/ic_foto"
+                        android:clickable="true"
+                        android:elevation="3dp"
+                        tools:ignore="MissingConstraints" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/TVinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/constraintLayout1"
+                android:fontFamily="@font/poppins"
+                android:text="*Silahkan memotret kondisi barang sebelum dipinjam!"
+                android:textAlignment="center"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/TVP_nama_barang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TVinfo"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_bg"
+                android:drawableLeft="@drawable/ic_nama_barang"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/poppins"
+                android:hint="Nama Barang"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="8dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/TVP_ruangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TVP_nama_barang"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_bg"
+                android:drawableLeft="@drawable/ic_ruangan"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/poppins"
+                android:hint="Ruangan"
+                android:maxLength="25"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="8dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/TVP_lokasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TVP_ruangan"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_bg"
+                android:drawableLeft="@drawable/ic_lokasi_barang"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/poppins"
+                android:hint="Lokasi"
+                android:maxLength="8"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="8dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/ETP_jumlah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TVP_lokasi"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_bg"
+                android:drawableLeft="@drawable/ic_stok_barang"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/poppins"
+                android:hint="Jumlah Barang"
+                android:maxLength="2"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="8dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/ETP_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ETP_jumlah"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_bg"
+                android:drawableLeft="@drawable/ic_nama"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/poppins"
+                android:hint="Nama Peminjam"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="8dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/ETP_nim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ETP_nama"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_bg"
+                android:drawableLeft="@drawable/ic_nim"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/poppins"
+                android:hint="NIM"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="8dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/BTNPinjamBarang"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_below="@+id/ETP_nim"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_tambah_kontak_bg"
+                android:text="Pinjam Barang"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:fontFamily="@font/carter_one"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+        <include layout="@layout/activity_header_nav" />
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

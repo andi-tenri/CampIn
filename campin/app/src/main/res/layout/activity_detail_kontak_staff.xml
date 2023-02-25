@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_kontak"
+    tools:context=".UpdateProfilActivity">
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:minHeight="?attr/actionBarSize"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+<!--        app:title="Profil Staf"-->
+<!--        app:titleTextColor="@color/color2"-->
+<!--        tools:ignore="MissingConstraints" />-->=
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="25dp">
+
+        <ImageView
+            android:id="@+id/BTN_kembali_detailkontakstaffadmin"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_kembali"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/carter_one"
+            android:text="Data Kontak Staff"
+            android:textColor="@color/color2"
+            android:textSize="18dp"
+            app:layout_constraintStart_toEndOf="@+id/BTN_kembali_detailkontakstaffadmin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginRight="3dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_ic_teleponstaff1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/BTNHapusDataKontak"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_delete" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/splash"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/pic_profil_staff"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/noimages"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:background="@drawable/bg_ic_gambar"
+                android:gravity="center"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="7dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageButton
+                    android:id="@+id/IM_ubahfoto_staff"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/ic_foto"
+                    android:clickable="true"
+                    android:elevation="3dp"
+                    tools:ignore="MissingConstraints" />
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/ETUp_namastaff_profil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/poppins"
+            android:hint="Nama Staf"
+            android:maxLength="20"
+            android:paddingLeft="20dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="10dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ETUp_idstaff_profil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableLeft="@drawable/ic_nim"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/poppins"
+            android:hint="ID Staf"
+            android:paddingLeft="20dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="10dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ETUp_nohp_staff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableLeft="@drawable/ic_telepon"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/poppins"
+            android:hint="No Handphone"
+            android:paddingLeft="20dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="10dp"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/BTNUbahKontakStaff"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_tambah_kontak_bg"
+            android:fontFamily="@font/carter_one"
+            android:text="Ubah data"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

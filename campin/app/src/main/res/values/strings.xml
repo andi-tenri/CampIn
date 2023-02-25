@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">CampIn</string>
+
+    <!-- Headings -->
+    <string name="headslide1">Bingung mencari lokasi barang?</string>
+    <string name="headslide2">Proses pengembalian barang yang ribet?</string>
+    <string name="headslide3">Susah menghubungi para staff ruangan?</string>
+    <string name="headslide4">Selamat Datang di CampIn</string>
+
+    <!-- Desc -->
+    <string name="descslide1">Dengan menggunakan aplikasi ini, <b>lokasi barang</b> akan mudah ditemukan</string>
+    <string name="descslide2">Proses pengembalian barang yang mudah dengan hanya memotret kondisi barang, kemudian aplikasi akan mendata <b>riwayat barang</b>  yang telah dipinjam</string>
+    <string name="descslide3">Pada aplikasi ini tersedia <b>fitur kontak</b> sehingga memudahkan dalam menghubungi para staff ruangan</string>
+    <string name="descslide4">Sebuah aplikasi <b>Inventaris Kampus</b> yang bertujuan menangani peminjaman dan pengembalian inventaris kampus</string>
+    <string name="descslide5">Sebuah aplikasi <b>Inventaris Kampus</b> yang bertujuan menangani peminjaman dan pengembalian barang di kampus. Berikut merupakan nama-nama founder aplikasi dari <b>TEAM BRILLIANT!</b></string>
+
+    <!-- NavDraw -->
+    <string name="navigation_drawer_open">Buka Navigation Drawer</string>
+    <string name="navigation_drawer_close">Keluar dari Navigation Drawer</string>
+    <string name="title_activity_nav_menu">nav_menu</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+</resources>
